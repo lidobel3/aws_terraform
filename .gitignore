@@ -211,5 +211,6 @@ terraform.tfstate.backup
 terraform.tfstate
 package/
 .terraform/
+.ssh/
 
 >>>>>>> 40ce943 (Travail en cours)
