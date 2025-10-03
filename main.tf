@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "mon_bucket" {
   bucket = "mon-bucket-tf-demo-${random_id.bucket_suffix.hex}"
   force_destroy = true
 }
-
+#
 # 2. Role IAM pour EC2
 resource "aws_iam_role" "ec2_s3_role" {
   name = "ec2-s3-access-role"
