@@ -46,8 +46,13 @@ module "eks_iam_role" {
 
 # Créer le cluster EKS
 module "eks" {
+<<<<<<< HEAD
   source  = "terraform-aws-modules/eks/aws"
   version = "20.8.4"
+=======
+  source          = "terraform-aws-modules/eks/aws"
+  version         = "20.8.4"
+>>>>>>> main
 
   cluster_name    = "demo-eks-cluster"
   cluster_version = "1.29" # ou autre version stable
@@ -67,7 +72,11 @@ module "eks" {
     }
   }
 
+<<<<<<< HEAD
   #   manage_aws_auth_configmap = true
+=======
+#   manage_aws_auth_configmap = true
+>>>>>>> main
 
   tags = {
     Environment = "dev"
